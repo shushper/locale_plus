@@ -66,6 +66,8 @@ class LocalePlus {
     return LocalePlusPlatform.instance.getTimeZoneIdentifier();
   }
 
+  /// Returns the first day of week for the current locale of device.
+  /// Where the 1 is Monday and the 7 is Sunday.
   Future<int?> getFirstDayOfWeek() {
     return LocalePlusPlatform.instance.getFirstDayOfWeek();
   }
