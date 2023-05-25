@@ -65,4 +65,8 @@ class LocalePlus {
   Future<String?> getTimeZoneIdentifier() {
     return LocalePlusPlatform.instance.getTimeZoneIdentifier();
   }
+
+  Future<int?> getFirstDayOfWeek() {
+    return LocalePlusPlatform.instance.getFirstDayOfWeek();
+  }
 }

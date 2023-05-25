@@ -81,4 +81,10 @@ class MethodChannelLocalePlus extends LocalePlusPlatform {
         await methodChannel.invokeMethod<String>('getTimeZoneIdentifier');
     return timeZoneIdentifier;
   }
+
+  @override
+  Future<int?> getFirstDayOfWeek() async {
+    final firstDayOfWeek = await methodChannel.invokeMethod<int>('getFirstDayOfWeek');
+    return firstDayOfWeek;
+  }
 }
